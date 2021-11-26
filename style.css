@@ -27,7 +27,6 @@ header {
   width: 100%;
   justify-content: center;
   padding: 24px;
-  display: grid;
 }
 
 .heading-1 {
@@ -92,9 +91,8 @@ header {
 
 .section-title {
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
-
 
 .section-title h2 {
   font-size: 40px;
@@ -143,8 +141,15 @@ header {
   margin: 0 8px;
 }
 
+.card-list li {
+  color: #36b37f;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
 .project-cards .technologies li {
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   padding: 4px;
   border-radius: 2px;
   font-size: 12px;
@@ -159,7 +164,7 @@ header {
 }
 
 .project-cards button {
-  background:  #36b37f;
+  background: #36b37f;
   outline: none;
   border: none;
   color: #fff;
@@ -167,20 +172,20 @@ header {
   padding: 5px 10px;
 }
 
-/*------- About Section -------*/
+/* ------- About Section ------- */
 
 .about {
   background-image: url(./img/img/illustration2.svg), url(./img/img/illustration.svg);
-    background-position: top right, bottom left;
-    background-repeat: no-repeat, no-repeat;
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
+  background-position: top right, bottom left;
+  background-repeat: no-repeat, no-repeat;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .tech-btn {
@@ -200,13 +205,6 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.card-list li {
-  color: #36b37f;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
 }
 
 .lang {
@@ -230,31 +228,32 @@ header {
 
 .get-resm {
   background: #36b37f;
-    border-radius: 4px;
-    padding: 12px;
-    border: none;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    color: #fff;
-    margin-top: 15px;
-    margin-bottom: 24px;
+  border-radius: 4px;
+  padding: 12px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 24px;
 }
 
 .about-me-h {
   font-weight: bold;
-    line-height: 52px;
-    text-align: center;
-    font-size: 40px;
-    margin: 24px 0;
+  line-height: 52px;
+  text-align: center;
+  font-size: 40px;
+  margin: 24px 0;
 }
+
 .about-text {
   width: 327px;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    color: #172b4d;
-    margin-top: 14px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #172b4d;
+  margin-top: 14px;
 }
 
 .footer {
