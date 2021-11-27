@@ -103,6 +103,9 @@ header {
 .green-line {
   text-align: center;
   margin-top: 10px;
+  background-image: url(./img/Indicator.png);
+  background-repeat: no-repeat;
+  margin-left: 48%;
 }
 
 .project-container {
@@ -114,6 +117,8 @@ header {
 }
 
 .project-cards {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 20px auto;
   border: 1px solid #ddd;
@@ -224,6 +229,21 @@ header {
   margin-right: 8px;
   margin-bottom: 29px;
   flex-wrap: wrap;
+}
+
+button:hover {
+  background-color: #c5e9da;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #fff;
+  background-color: #36b37e;
+}
+
+button:active {
+  background-color: #008552;
 }
 
 .get-resm {
