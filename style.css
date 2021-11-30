@@ -95,9 +95,14 @@ header {
 }
 
 .section-title h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 208px;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
+  margin-left: 25%;
 }
 
 .green-line {
