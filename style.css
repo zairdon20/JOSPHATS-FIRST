@@ -51,6 +51,7 @@ header {
   color: #172b4d;
   margin-top: 35px;
 }
+
 .introduction-text {
   color: #172b4d;
   text-align: center;
@@ -191,7 +192,8 @@ header {
 /* ------- About Section ------- */
 
 .about {
-  background-image: url(./img/img/illustration2.svg),
+  background-image:
+    url(./img/img/illustration2.svg),
     url(./img/img/illustration.svg);
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
@@ -427,6 +429,7 @@ label {
 .footer-icons a {
   font-size: 23px;
 }
+
 .popup-btn {
   width: 158px;
   height: 48px;
