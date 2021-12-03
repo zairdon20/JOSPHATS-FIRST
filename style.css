@@ -189,7 +189,8 @@ header {
 /* ------- About Section ------- */
 
 .about {
-  background-image: url(./img/img/illustration2.svg),
+  background-image:
+    url(./img/img/illustration2.svg),
     url(./img/img/illustration.svg);
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
@@ -489,8 +490,8 @@ label {
 
   .work-section {
     margin: 10px 0;
-    padding-top: 100px;
     padding: 100px 30px 50px 30px;
+    padding-top: 100px;
   }
 
   .project-container-list {
