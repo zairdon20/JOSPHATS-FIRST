@@ -479,3 +479,18 @@ label {
   margin-top: -15px;
   color: #42526e;
 }
+
+@media screen and (min-width: 992px){
+.section-1 {
+    background-image: url(img/img/Header-llustration-desktop@2x.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
