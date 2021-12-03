@@ -27,6 +27,7 @@ header {
   width: 100%;
   justify-content: center;
   padding: 24px;
+  height: 90vh;
 }
 
 .heading-1 {
@@ -102,14 +103,10 @@ header {
 }
 
 .section-title h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 208px;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
-  margin-left: 25%;
+  text-align: center;
 }
 
 .green-line {
@@ -192,8 +189,7 @@ header {
 /* ------- About Section ------- */
 
 .about {
-  background-image:
-    url(./img/img/illustration2.svg),
+  background-image: url(./img/img/illustration2.svg),
     url(./img/img/illustration.svg);
   background-position: top right, bottom left;
   background-repeat: no-repeat, no-repeat;
@@ -208,7 +204,6 @@ header {
 }
 
 .tech-btn {
-  width: 327px;
   height: 325px;
   border-radius: 8px;
   border: 1px solid #c1c7d0;
@@ -480,17 +475,83 @@ label {
   color: #42526e;
 }
 
-@media screen and (min-width: 992px){
-.section-1 {
+@media screen and (min-width: 992px) {
+  .section-1 {
     background-image: url(img/img/Header-llustration-desktop@2x.png);
     background-position: center;
     background-size: cover;
-}
+  }
 
-.project-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .about-text {
+    width: auto;
+    padding: 0 12%;
+  }
+
+  .work-section {
+    margin: 10px 0;
+    padding-top: 100px;
+    padding: 100px 30px 50px 30px;
+  }
+
+  .project-container-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+
+  .tech-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+
+  .form-background {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .introduction-text {
+    color: #172b4d;
+    text-align: justify;
+    font-size: 30px;
+  }
+
+  .contact-header {
+    width: 90%;
+    padding-left: 35px;
+  }
+
+  .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -100px;
+  }
+
+  .input {
+    width: 480px;
+    height: 48px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    padding: 15px 16px;
+    margin-bottom: 24px;
+  }
+
+  .footer-line {
+    border-top: 1px solid #dfe1e6;
+    margin-top: 120px;
+    min-height: 9vh;
+  }
+
+  .my-email {
+    display: none;
+  }
+
+  .green-btn {
+    margin-left: -188%;
+  }
+
+  .green-line {
+    display: none;
+  }
 }

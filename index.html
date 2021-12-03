@@ -20,7 +20,7 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
         </nav>
     </header>
-    <main>
+</main>
         <section class="section-1">
             <h1 class="heading-1">Hey there. I’m Josphat</h1>
             <h2 class="heading-2">I’m a software developer</h2>
@@ -48,7 +48,7 @@
                 <br>
             </div>
             <section class="project-container">
-                <ul>
+                <ul class="project-container-list">
 
                     <li class="project-cards">
                         <img src="img/Img_Plaholder.png" alt="background">
@@ -142,7 +142,7 @@
                     </div>
                 </section>
                 <section class="tech">
-                    <ul>
+                    <ul class="tech-list">
                         <li class="tech-btn">
                             <img src="./img/img/icon-languages.svg" alt="logo">
                             <h2 class="lang">Languages</h2>
@@ -178,49 +178,28 @@
                     </ul>
                 </section>
             </section>
-            <footer class="footer" id="contact-me">
-                <div class="form form-background">
-                    <h2 class="introduction-text common font-f contact-header">I'm always interested in hearing about
-                        new projects, so if you'd like to chat please get in touch.</h2>
-
-                    <form action="https://formspree.io/f/xzbygvjd" name="contact-form" method="POST" id="form">
-                        <label for="fname">Full name:</label>
-                        <input id="fname" type="text" maxlength="30" name="fullName" placeholder="Full name" required
-                            class="input">
-
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email-address" placeholder="Email address" required
-                            class="input">
-
-                        <label for="textarea">Message:</label>
-                        <textarea id="textarea" name="comment" maxlength="500" cols="30" rows="10"
-                            placeholder="Enter text here" required class="input text-area"></textarea>
-                        <div class="error-message">
-                            <p><b>The email has to be in lower case</b></p>
-                        </div>
-                        <div>
-                            <button class="green-btn font-f" id="submit-btn" type="submit">Get in touch</button>
-                        </div>
-
-                    </form>
-                </div>
-            </footer>
-            <div class="footer-line">
-                <ul class="icons">
-                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-medium" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-github" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-angellist" aria-hidden="true"></i></li>
-                </ul>
-                <p class="my-email">myemailhere@email.com</p>
-            </div>
-
-            <script src="main.js"></script>
         </section>
-    </main>
-    <script src="https://use.fontawesome.com/84bcd6cf83.js"></script>
+        <footer class="footer" id="contact-me"></footer>
+            <div class="form form-background"></div>
+                <h2 class="introduction-text common font-f contact-header">I'm always interested in hearing about
+                    new projects, so if you'd like to chat please get in touch.
+                </h2>
 
-</body>
+                <form action="https://formspree.io/f/xzbygvjd" name="contact-form" method="POST" id="form"></form>
+                    <label for="fname">Full name:</label>
+                    <input id="fname" type="text" maxlength="30" name="fullName" placeholder="Full name" required
+                        class="input">
 
-</html>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email-address" placeholder="Email address" required
+                        class="input">
+
+                    <label for="textarea">Message:</label>
+                    <textarea id="textarea" name="comment" maxlength="500" cols="30" rows="10"
+                        placeholder="Enter text here" required class="input text-area"></textarea>
+                    <div class="error-message">
+                        <p><b>The email has to be in lower case</b></p>
+                    </div>
+                    <div>
+                        <button class="green-btn font-f" id="submit-btn" type="submit">Get in touch</button>
+                    </div>
