@@ -16,6 +16,8 @@ header {
 
 .log {
   color: #28352f;
+  animation: logo-animation;
+  animation-duration: 2s;
 }
 
 .section-1 {
@@ -52,6 +54,16 @@ header {
   color: #172b4d;
   margin-top: 20px;
   padding: 0 15%;
+  animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+  
+@keyframes slide-up {
+ 0% {
+   transform: translateY(100px)
+ }
+  100% {
+    transform: translateY(0)
+  }
 }
 
 .introduction-text {
@@ -242,10 +254,11 @@ header {
   margin-right: 8px;
   margin-bottom: 29px;
   flex-wrap: wrap;
+  transition: all ease 500ms;
 }
 
 button:hover {
-  background-color: #c5e9da;
+  transform: scale(1.2);
   color: #fff;
   cursor: pointer;
 }
@@ -256,6 +269,7 @@ button:disabled {
 }
 
 button:active {
+  transform: scale(1);
   background-color: #008552;
 }
 
@@ -593,5 +607,18 @@ label {
 
   .buttons {
     margin-bottom: 10px;
+  }
+
+  i {
+    transition: all ease 300ms;
+  }
+
+  i:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+
+  i:active {
+    transform: scale(1);
   }
 }
