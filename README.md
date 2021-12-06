@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 [Live Demo Link](https://zairdon20.github.io/JOSPHATS-FIRST/)
 
-
+[Online view link ](https://zairdon20.github.io/JOSPHATS-FIRST/)
 
 
 ### Prerequisites
