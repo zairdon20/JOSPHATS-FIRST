@@ -56,13 +56,14 @@ header {
   padding: 0 15%;
   animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
-  
+
 @keyframes slide-up {
- 0% {
-   transform: translateY(100px)
- }
+  0% {
+    transform: translateY(100px);
+  }
+
   100% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
 
