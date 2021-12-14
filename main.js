@@ -4,15 +4,15 @@ const menuIcon = document.querySelector('.menuIcon');
 const menuItems = document.querySelectorAll('.link');
 
 menuItems.forEach((li) => {
-    li.addEventListener('click', () => {
-        list.classList.remove('d-block')
-    })
-})
-menuIcon.addEventListener('click', ()=> {
-    console.log('hello');
-    list.classList.add('d-block')
-})
+  li.addEventListener('click', () => {
+    list.classList.remove('d-block');
+  });
+});
+
+menuIcon.addEventListener('click', () => {
+  list.classList.add('d-block');
+});
 
 closeIcon.addEventListener('click', () => {
-    list.classList.remove('d-block')
-})
+  list.classList.remove('d-block');
+});
