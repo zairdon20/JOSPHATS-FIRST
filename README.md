@@ -12,6 +12,7 @@ Additional description about the project and its features.
 
 - html
 - css
+- JavaScript
 - vscode
 
 ## Live Demo
@@ -43,6 +44,13 @@ Additional description about the project and its features.
 - Twitter: [@Josphatnkonde1](https://twitter.com/twitterhandle)
 - LinkedIn: [Josphat Nkonde](https://linkedin.com/in/linkedinhandle)
 
+## Author_2
+
+👤 **Tresor**
+
+- GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
+- Twitter: [@tresorsawasawa](https://twitter.com/TresorSawasawa)
+- LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tr%C3%A9sor-sawasawa-43745320b/)
 
 
 Contributions, issues, and feature requests are welcome!

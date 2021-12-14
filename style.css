@@ -139,6 +139,18 @@ header {
   align-items: center;
 }
 
+.navbar-links li {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 10%;
+  list-style: none;
+  font-weight: 600;
+  line-height: 44px;
+  font-style: normal;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+}
+
 .project-cards {
   display: flex;
   flex-direction: column;
@@ -200,6 +212,10 @@ header {
   padding: 10px 15px;
 }
 
+/* nav {
+  display: none;
+} */
+
 /* ------- About Section ------- */
 
 .about {
@@ -216,6 +232,10 @@ header {
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.closeIcon {
+  display: block;
 }
 
 .tech-btn {
@@ -498,6 +518,23 @@ label {
   display: none;
 }
 
+.navbar-links a {
+  text-decoration: none;
+}
+
+.navbar-links.d-block {
+  display: block;
+  gap: 40px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+  color: #3a4a42;
+}
+
 @media screen and (min-width: 992px) {
   .section-1 {
     background-image: url(img/img/Header-llustration-desktop@2x.png);
@@ -509,6 +546,10 @@ label {
   .about-text {
     width: auto;
     padding: 0 12%;
+  }
+
+  .close-icon {
+    display: none;
   }
 
   .work-section {
