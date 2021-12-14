@@ -57,6 +57,10 @@ header {
   animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
+.close-icon {
+  display: none;
+}
+
 @keyframes slide-up {
   0% {
     transform: translateY(100px);
