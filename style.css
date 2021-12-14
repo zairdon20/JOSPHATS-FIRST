@@ -57,9 +57,6 @@ header {
   animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
-.close-icon {
-  display: none;
-}
 
 @keyframes slide-up {
   0% {
@@ -238,6 +235,9 @@ header {
   margin-bottom: 30px;
 }
 
+.closeIcon {
+  display: block;
+}
 .tech-btn {
   height: 340px;
   border-radius: 8px;
@@ -548,7 +548,7 @@ label {
     padding: 0 12%;
   }
 
-  .closeIcon {
+  .close-icon {
     display: none;
   }
   .work-section {
