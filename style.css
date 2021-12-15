@@ -66,10 +66,6 @@ a {
   animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
-.close-icon {
-  display: none;
-}
-
 @keyframes slide-up {
   0% {
     transform: translateY(100px);
@@ -245,6 +241,10 @@ a {
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.closeIcon {
+  display: block;
 }
 
 .tech-btn {
@@ -555,6 +555,10 @@ label {
   .about-text {
     width: auto;
     padding: 0 12%;
+  }
+
+  .close-icon {
+    display: none;
   }
 
   .work-section {
