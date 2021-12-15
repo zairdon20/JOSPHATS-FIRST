@@ -7,11 +7,20 @@
   list-style: none;
 }
 
-header {
+a {
+  text-transform: none;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
   align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 1px 1px 30px rgb(197 196 196 / 27%);
+  z-index: 99;
 }
 
 .log {
