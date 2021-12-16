@@ -7,6 +7,10 @@ const popup = document.querySelector('.hide');
 const closeBtn = document.querySelector('.popup-close-btn');
 const cardContainer = document.querySelector('.project-container-list');
 
+function g(e) {
+  return document.getElementById(e)
+}
+
 // card data
 const Cards = [
   {
@@ -165,16 +169,9 @@ closeBtn.addEventListener('click', () => {
 const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
-const mail = form.email;
+const email = g('email').value;
 const messageInput = form.comment;
 const nameInput = form.fullName;
 const formElts = form.querySelectorAll('input, textarea');
 const check = document.querySelector('#submit-btn');
-
-check.addEventListener('click', () => {
-  if (isLowerCase !== true) {
-    errorMessage.style.display = 'block';
-  } else {
-    errorMessage.style.display = 'none';
-  }
-});
+// Add below
