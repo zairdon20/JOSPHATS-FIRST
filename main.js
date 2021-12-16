@@ -8,7 +8,7 @@ const closeBtn = document.querySelector('.popup-close-btn');
 const cardContainer = document.querySelector('.project-container-list');
 
 function g(e) {
-  return document.getElementById(e)
+  return document.getElementById(e);
 }
 
 // card data
@@ -175,9 +175,10 @@ const email = g('email').value;
 // const formElts = form.querySelectorAll('input, textarea');
 // const check = document.querySelector('#submit-btn');
 
-// Add below
+// Implement the email checker
+
 form.addEventListener('submit', (e) => {
-  e.preventDefault()
+  e.preventDefault();
   if (isLowerCase(email) !== true) {
     errorMessage.style.display = 'block';
     setTimeout(() => {
