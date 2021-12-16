@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header id="Portfolio" class="parent">
+    <header id="Portfolio" class="header">
         <h2 class="log"><a class="Welcome" href="#">Welcome</a></h2>
         <nav class="navbar-humberger">
             <i class="menuIcon material-icons">menu</i>
@@ -55,87 +55,8 @@
             <div class="green-line">
                 <br>
             </div>
-            <section class="project-container">
-                <ul class="project-container-list">
-                    <li class="project-cards">
-                        <img src="img/Img_Plaholder.png" alt="background">
-                        <h4>Multi-Post Stories <br> Gain+Glory</h4>
-                        <ul class="technologies">
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>Javascript</li>
-                            <li>html</li>
-                        </ul>
-                        <div class="projectBTN">
-                            <button type="button" class="project-btn">See project</button>
-                        </div>
-                    </li>
-                    <li class="project-cards">
-                        <img src="img/Img_Plaholder.png" alt="background">
-                        <h4>Multi-Post Stories <br> Gain+Glory</h4>
-                        <ul class="technologies">
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>Javascript</li>
-                            <li>html</li>
-                        </ul>
-                        <div class="projectBTN">
-                            <button type="button" class="project-btn">See project</button>
-                        </div>
-                    </li>
-                    <li class="project-cards">
-                        <img src="img/Img_Plaholder.png" alt="placeholder">
-                        <h4>Multi-Post Stories <br> Gain+Glory</h4>
-                        <ul class="technologies">
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>Javascript</li>
-                            <li>html</li>
-                        </ul>
-                        <div class="projectBTN">
-                            <button type="button" class="project-btn">See project</button>
-                        </div>
-                    </li>
-                    <li class="project-cards">
-                        <img src="img/Img_Plaholder.png" alt="placeholder">
-                        <h4>Multi-Post Stories <br> Gain+Glory</h4>
-                        <ul class="technologies">
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>Javascript</li>
-                            <li>html</li>
-                        </ul>
-                        <div class="projectBTN">
-                            <button type="button" class="project-btn">See project</button>
-                        </div>
-                    </li>
-                    <li class="project-cards">
-                        <img src="img/Img_Plaholder.png" alt="placeholder">
-                        <h4>Multi-Post Stories <br> Gain+Glory</h4>
-                        <ul class="technologies">
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>Javascript</li>
-                            <li>html</li>
-                        </ul>
-                        <div class="projectBTN">
-                            <button type="button" class="project-btn">See project</button>
-                        </div>
-                    </li>
-                    <li class="project-cards">
-                        <img src="img/Img_Plaholder.png" alt="placeholder">
-                        <h4>Multi-Post Stories <br> Gain+Glory</h4>
-                        <ul class="technologies">
-                            <li>Ruby on rails</li>
-                            <li>css</li>
-                            <li>Javascript</li>
-                            <li>html</li>
-                        </ul>
-                        <div class="projectBTN">
-                            <button type="button" class="project-btn">See project</button>
-                        </div>
-                    </li>
-                </ul>
+            <div class="project-container">
+                <ul class="project-container-list"></ul>
 
                 <section class="about" id="About">
                     <h2 class="about-me-h">About Me</h2>
@@ -147,6 +68,25 @@
                     <div>
                         <button class="get-resm" type="button">Get My Resume</button>
                     </div>
+                    <div class="popup-modal bg-popup hide">
+                        <div class="popup-data">
+                              <i class="fa fa-times popup-close-btn" aria-hidden="true"></i>
+                              <div class="cont">
+                                <img class="img-block" src="img/Img/modal-popup-mobile.png" alt="#">
+                              </div>
+                              <div class="bottom-card-popup">
+                                <h3 class="card-heading-popup font-f">Keeping track of hundreds of
+                                  components</h3>
+                                <ul class="btns" id="foo">
+                                </ul>
+                                <p class="popup-text font-f"></p>
+                                <div class="popup-btn-container">
+                                  <a href="" class="popup-btn font-f see-live">See Live<span><i class="fa fa-external-link"></i></span></a>
+                                  <a href="" class="popup-btn font-f see-source">See Source<span><i class="fa fa-github"></i></span></a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
                 </section>
                 <section class="tech">
                     <ul class="tech-list">
@@ -184,7 +124,7 @@
                         </li>
                     </ul>
                 </section>
-            </section>
+            </div>
         </section>
         <footer class="footer" id="Contact">
             <div class="form form-background">
