@@ -2,15 +2,12 @@ const list = document.querySelector('.navbar-links');
 const closeIcon = document.querySelector('.closeIcon');
 const menuIcon = document.querySelector('.menuIcon');
 const menuItems = document.querySelectorAll('.link');
-const main = document.querySelector('main');
-const html = document.querySelector('html');
-const btns = document.querySelectorAll('.project-btn')
-const popup = document.querySelector('.hide')
-const closeBtn = document.querySelector('.popup-close-btn')
+const btns = document.querySelectorAll('.project-btn');
+const popup = document.querySelector('.hide');
+const closeBtn = document.querySelector('.popup-close-btn');
 const cardContainer = document.querySelector('.project-container-list');
- 
 
-// card data 
+// card data
 const Cards = [
   {
     id: 'card1',
@@ -68,9 +65,7 @@ const Cards = [
   },
 ];
 
-
-
-// popup code 
+// popup code
 
 function popupCode(position) {
   const el = Cards[position];
@@ -144,10 +139,10 @@ Cards.forEach((card, i) => {
 // Cards.forEach((card) => {
 //   const data = `
 //   <li class="project-cards">
-  // <img src="img/Img_Plaholder.png" alt="placeholder">
+// <img src="img/Img_Plaholder.png" alt="placeholder">
 //   <h4>Multi-Post Stories <br> Gain+Glory</h4>
 //   <ul class="technologies">
- //     ${languages}
+//     ${languages}
 //   </ul>
 //   <div class="projectBTN">
 //       <button type="button" class="project-btn">See project</button>
@@ -170,13 +165,12 @@ closeIcon.addEventListener('click', () => {
   list.classList.remove('d-block');
 });
 
-
 btns.forEach((btn) => {
   btn.addEventListener('click', () => {
-    popup.classList.remove('hide')
-  })
-})
+    popup.classList.remove('hide');
+  });
+});
 
 closeBtn.addEventListener('click', () => {
-  popup.classList.add('hide')
-})
+  popup.classList.add('hide');
+});
