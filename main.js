@@ -7,10 +7,6 @@ const popup = document.querySelector('.hide');
 const closeBtn = document.querySelector('.popup-close-btn');
 const cardContainer = document.querySelector('.project-container-list');
 
-function g(e) {
-  return document.getElementById(e);
-}
-
 // card data
 const Cards = [
   {
@@ -169,19 +165,20 @@ closeBtn.addEventListener('click', () => {
 const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
-const email = g('email').value;
+const mail = form.email;
 
 // Implement the email checker
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (isLowerCase(email) !== true) {
+  const email = mail.value;
+  if (!isLowerCase(email)) {
     errorMessage.style.display = 'block';
     setTimeout(() => {
       errorMessage.style.display = 'none';
     }, 3000);
   } else {
-    console.log('sdfghj');
     errorMessage.style.display = 'none';
+    form.submit();
   }
 });
