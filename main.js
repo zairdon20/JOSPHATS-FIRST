@@ -170,8 +170,21 @@ const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
 const email = g('email').value;
-const messageInput = form.comment;
-const nameInput = form.fullName;
-const formElts = form.querySelectorAll('input, textarea');
-const check = document.querySelector('#submit-btn');
+// const messageInput = form.comment;
+// const nameInput = form.fullName;
+// const formElts = form.querySelectorAll('input, textarea');
+// const check = document.querySelector('#submit-btn');
+
 // Add below
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  if (isLowerCase(email) !== true) {
+    errorMessage.style.display = 'block';
+    setTimeout(() => {
+      errorMessage.style.display = 'none';
+    }, 3000);
+  } else {
+    console.log('sdfghj');
+    errorMessage.style.display = 'none';
+  }
+});
