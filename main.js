@@ -170,10 +170,6 @@ const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
 const email = g('email').value;
-// const messageInput = form.comment;
-// const nameInput = form.fullName;
-// const formElts = form.querySelectorAll('input, textarea');
-// const check = document.querySelector('#submit-btn');
 
 // Implement the email checker
 
