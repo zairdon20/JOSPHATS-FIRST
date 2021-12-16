@@ -161,7 +161,7 @@ closeBtn.addEventListener('click', () => {
   popup.classList.add('hide');
 });
 
-// Email Validation
+// Implement the client validation for inputs
 const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
@@ -169,3 +169,12 @@ const mail = form.email;
 const messageInput = form.comment;
 const nameInput = form.fullName;
 const formElts = form.querySelectorAll('input, textarea');
+const check = document.querySelector('#submit-btn');
+
+check.addEventListener('click', () => {
+  if (isLowerCase !== true) {
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+  }
+});
