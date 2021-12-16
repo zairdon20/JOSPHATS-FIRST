@@ -136,20 +136,6 @@ Cards.forEach((card, i) => {
   far.childNodes[1].appendChild(btn);
   cardContainer.appendChild(far);
 });
-// Cards.forEach((card) => {
-//   const data = `
-//   <li class="project-cards">
-// <img src="img/Img_Plaholder.png" alt="placeholder">
-//   <h4>Multi-Post Stories <br> Gain+Glory</h4>
-//   <ul class="technologies">
-//     ${languages}
-//   </ul>
-//   <div class="projectBTN">
-//       <button type="button" class="project-btn">See project</button>
-//   </div>
-// </li>
-//   `
-// })
 
 menuItems.forEach((li) => {
   li.addEventListener('click', () => {
