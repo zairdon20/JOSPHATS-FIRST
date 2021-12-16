@@ -160,3 +160,12 @@ btns.forEach((btn) => {
 closeBtn.addEventListener('click', () => {
   popup.classList.add('hide');
 });
+
+// Email Validation
+const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+const errorMessage = document.querySelector('.error-message');
+const form = document.forms['contact-form'];
+const mail = form.email;
+const messageInput = form.comment;
+const nameInput = form.fullName;
+const formElts = form.querySelectorAll('input, textarea');
