@@ -161,13 +161,15 @@ a {
 }
 
 .project-cards {
+  width: 327px;
+  height: 474px;
+  border-radius: 8px;
+  border: 1px solid #d0d9d4;
+  background-color: #ebf0ee;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 20px auto;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  height: 390px;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .project-cards img {
@@ -395,9 +397,12 @@ label {
   margin-bottom: 17.04px;
 }
 
+.hide {
+  display: none;
+}
+
 .bg-popup {
   position: fixed;
-  display: none;
   top: 0;
   left: 0;
   right: 0;
@@ -416,13 +421,25 @@ label {
 
 .popup-data {
   width: 95%;
-  margin: 20px auto;
+  margin: 36% auto;
   background-color: #fff;
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px 15px 80px 15px;
   border-radius: 16px;
+}
+
+.bottom-card {
+  background-color: white;
+  height: 222px;
+  width: 327px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bottom-card-popup {
