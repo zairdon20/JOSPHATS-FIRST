@@ -160,3 +160,25 @@ btns.forEach((btn) => {
 closeBtn.addEventListener('click', () => {
   popup.classList.add('hide');
 });
+
+// Implement the client validation for inputs
+const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+const errorMessage = document.querySelector('.error-message');
+const form = document.forms['contact-form'];
+const mail = form.email;
+
+// Implement the email checker
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = mail.value;
+  if (!isLowerCase(email)) {
+    errorMessage.style.display = 'block';
+    setTimeout(() => {
+      errorMessage.style.display = 'none';
+    }, 3000);
+  } else {
+    errorMessage.style.display = 'none';
+    form.submit();
+  }
+});
